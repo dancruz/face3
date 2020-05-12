@@ -4,6 +4,5 @@ $user='root';
 $pass='';
 $db='sisteintel';
 
-$conn = mysql_connect($host,$user,$pass);
-mysql_select_db($db,$conn);
+$conn = mysqli_connect($host, $user, $pass, $db) or die("Error conexion");
 ?>
